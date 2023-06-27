@@ -19,7 +19,8 @@ builder.Services
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 // o cadastro sempre vai ser instanciado quando houver uma requisição nova, sempre a mesma requisição
-builder.Services.AddScoped<CadastroService>();
+builder.Services.AddScoped<UsuarioService>();
+builder.Services.AddScoped<TokenService>();
 // fara sempre uma instancia nova , mesmo que seja a mesma requisição
 // builder.Services.AddTransient<CadastroService>()
 // ia ser um unico cadastro service para todas as requisições que chegassem, a mesma instancia  
