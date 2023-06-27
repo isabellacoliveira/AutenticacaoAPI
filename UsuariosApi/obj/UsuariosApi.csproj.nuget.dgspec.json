@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\ModalGR\\Desktop\\STACKS\\STACK .NET\\.NET 5 e Identity implementando controle de usuário\\UsuariosApi\\UsuariosApi\\UsuariosApi.csproj": {}
+    "C:\\Users\\ModalGR\\Desktop\\STACKS\\STACK .NET\\.NET 5 e Identity implementando controle de usuário\\UsuariosApi\\UsuariosApi\\UsuariosApi.csproj": {}
   },
   "projects": {
-    "c:\\Users\\ModalGR\\Desktop\\STACKS\\STACK .NET\\.NET 5 e Identity implementando controle de usuário\\UsuariosApi\\UsuariosApi\\UsuariosApi.csproj": {
+    "C:\\Users\\ModalGR\\Desktop\\STACKS\\STACK .NET\\.NET 5 e Identity implementando controle de usuário\\UsuariosApi\\UsuariosApi\\UsuariosApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ModalGR\\Desktop\\STACKS\\STACK .NET\\.NET 5 e Identity implementando controle de usuário\\UsuariosApi\\UsuariosApi\\UsuariosApi.csproj",
+        "projectUniqueName": "C:\\Users\\ModalGR\\Desktop\\STACKS\\STACK .NET\\.NET 5 e Identity implementando controle de usuário\\UsuariosApi\\UsuariosApi\\UsuariosApi.csproj",
         "projectName": "UsuariosApi",
-        "projectPath": "c:\\Users\\ModalGR\\Desktop\\STACKS\\STACK .NET\\.NET 5 e Identity implementando controle de usuário\\UsuariosApi\\UsuariosApi\\UsuariosApi.csproj",
+        "projectPath": "C:\\Users\\ModalGR\\Desktop\\STACKS\\STACK .NET\\.NET 5 e Identity implementando controle de usuário\\UsuariosApi\\UsuariosApi\\UsuariosApi.csproj",
         "packagesPath": "C:\\Users\\ModalGR\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ModalGR\\Desktop\\STACKS\\STACK .NET\\.NET 5 e Identity implementando controle de usuário\\UsuariosApi\\UsuariosApi\\obj\\",
+        "outputPath": "C:\\Users\\ModalGR\\Desktop\\STACKS\\STACK .NET\\.NET 5 e Identity implementando controle de usuário\\UsuariosApi\\UsuariosApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ModalGR\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,6 +21,7 @@
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,6 +43,24 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.14, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[6.0.14, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
