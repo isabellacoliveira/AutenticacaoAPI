@@ -8,6 +8,12 @@
     {
         public class TokenService
         {
+        private IConfiguration _configuration;
+
+        public TokenService(IConfiguration configuration)
+            {
+                _configuration = configuration;
+            }
             public string GenerateToken(Usuario usuario)
             {
                 Claim[] claims = new Claim[]
@@ -21,7 +27,7 @@
                 };
                 // operação que precisamos realizar a partir de uma chave 
                 // cadeia de caracteres que vao representar essa chave  
-                var chave  = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("SDASDSFSDFSDFAFAFA"));
+                var chave  = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["SymmetricSecurityKey"]));
                 var signingCredentials = new SigningCredentials(chave, SecurityAlgorithms.HmacSha256);
 
                 var token = new JwtSecurityToken

@@ -12,7 +12,7 @@ using UsuariosApi.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-var connectionString = builder.Configuration.GetConnectionString("UsuarioConnection");
+var connectionString = builder.Configuration["ConnectionStrings:UsuarioConnection"];
 
 // o identity será de um usuario
 builder.Services
@@ -39,7 +39,7 @@ builder.Services.AddAuthentication(options => {
     {
         // campo a campo que queremos colocar 
         ValidateIssuerSigningKey  = true,
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("SDASDSFSDFSDFAFAFA")),
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration ["SymmetricSecurityKey"])),
         ValidateAudience = false,
         ValidateIssuer = false,
         ClockSkew = TimeSpan.Zero
